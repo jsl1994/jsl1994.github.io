@@ -1,0 +1,876 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>  
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>CS 8803 Differentiable and Probabilistic Programming Languages, Spring 2025</title> 
+</head>
+	
+<body><font size="3" face="arial">
+
+<table border="0"> 
+<tbody><tr valign="top"> 
+<!-- <td>  -->
+<!-- <img src="book.jpg" border="1" height="103.4" width="92.4">  -->
+<!-- </td>  -->
+<td align="left"> 
+     <h2> CS 8803  <br> 
+     Differentiable and Probabilistic Programming Languages<br> 
+     <i>Spring 2025</i></h2>  
+</td> 
+</tr></tbody></table> 
+
+	<hr size="4" noshade="noshade">
+
+
+</font><dt><font size="3" face="arial"> <b> Announcements: </b>  
+     </li><li> [1/6] Send your preference of 5 papers to present to the instructor by 1/8 10pm ET.
+     </li><li> [1/6] Welcome to CS8803!
+     </li></ul>
+
+<p>
+
+
+
+
+	</p><hr size="4" noshade="noshade">
+</font><dl><font size="3" face="arial">
+<p> 
+</p><dt> <b>Instructor</b>:
+   </dt><dd><a href="https://jsl1994.github.io/">Jacob Laurel</a>, <br> 
+       Office: 2332 Klaus<br> 
+       Office Hours: Mon/Wed 4:00 - 5:00 PM<br> 
+       Email: jlaurel6@gatech.edu
+<p> 
+
+</p></dd><dt> <b>Lectures</b>: 
+    </dt><dd> Time: Mon/Wed 5:00 - 6:15 PM <br> 
+      Location: Ford Environmental Sci & Tech L1175
+
+<p>
+
+<!-- <DT> <b> Office Hours: </b>   -->
+<!--      <ul> -->
+<!--      <li> Mon.: 2:00pm-4:00pm (55 Kemper, Thong) -->
+<!--      <li> Wed.: 2:00pm-4:00pm (<strike>1031 Academic Surge Building</strike> -->
+<!--      3027 Kemper Hall, Qirun) -->
+<!--      </ul> -->
+
+</p><p>
+
+</p></dd><dt><b>Course Summary</b>:
+  </dt><dd>CS 8803 is a graduate course on both Differentiable and Probabilistic Programming Languages. We will study how mathematical ideas of differentiation and statistical inference can be automated at the level of the programming language. We will then explore how one can statically analyze these programming languages to reason about the mathematical properties satisfied by the differentiable or probabilistic program. We will additionally study how these techniques can be applied towards problems in a variety of research areas such as machine learning, graphics, and scientific computing. This course also strives to study how these ideas cut across the full computational stack, hence we will cover papers ranging from high-level algorithms all the way down to the architectural level.
+
+Students are expected to attend lecture, ask questions, present papers and complete a course project.&nbsp;
+
+
+	  
+<p>
+  </p></dd><dt> <b> References</b>:
+    <ul><li>Differentiable Programming and Automatic Differentiation
+   <ul>
+   <li> <i><b>Evaluating Derivatives: Principles and Techniques of Algorithmic Differentiation</b></i> 
+     by A. Griewank and A. Walther, 
+    SIAM, 2008.
+	</dt>
+
+<ul><li>Probabilistic Programming and Bayesian Inference <ul>
+   <li><i><b>The Design and Implementation of Probabilistic Programming Languages</b></i> 
+     by N. D. Goodman and A. Stuhlmüller, 
+     <a href="https://dippl.org/">Online book</a>   
+   </li>
+
+   <li><i><b>An Introduction to Probabilistic Programming</b></i> 
+     by J. Van de Meent, B. Paige, H. Yang, and F. Wood, 
+     <a href="https://arxiv.org/pdf/1809.10756">Online book</a>   
+   </li>
+
+
+</ul>
+
+
+<p>
+
+<!-- <p> -->
+</p></dt><dt><b>Assignments</b>:
+    <ul><li><b><i>Paper Review</i></b>
+   <ul>
+   <li> Paper review LaTeX <a href="https://helloqirun.github.io/course/cs8803-19/review.tex">template</a>. 
+   </li><li> Deadline: by 10:00 pm EST the night before the class.
+   </li></ul><p>
+      </p></li><li><b><i>Project Proposal</i></b>
+	   <ul>
+   <li> Four-Paragraph  <a href="https://www.cs.columbia.edu/~hgs/etc/intro-style.html">guideline</a> for your proposal.
+   </li><li> Deadline: 2/28 by 10:00 pm EST.
+     </li></ul>
+<p>
+      </p></li><li><b><i>Project Report</i></b>
+	   <ul>
+   <li> Conference-paper-style report.
+   </li><li> Deadline: 4/15 by 10:00 pm EST.
+     </li></ul>
+
+   
+   </li></ul>
+
+<p>
+</p></dt><dt><b>Grading</b>: 
+</dt><dd> Grading breakdown:
+<ul> 
+<li> Paper Review: 20%
+</li><li> Presentation: 20%
+</li><li> Project: 60%
+</li></ul> 
+<!-- <DD> Grading may reflect the clarity of your presentation as well as the  -->
+<!--      correctness of your answers.  -->
+<p> 
+
+
+</p></dd><dt> <b> Schedule</b>:
+</dt><dd> 
+<p>
+</p><table border="">
+<tbody>
+<tr>
+<th>Date</th>
+<th>Topic</th>
+<th>Paper</th>
+<th>Presenter and Optional Reading</th>
+</tr>
+
+<tr>
+<td> 1/6  </td>
+<td> Introduction</td>
+<td>
+     <ul>
+     <li> <a href="#">Course Logistics</a>
+     </li></ul>
+</td>
+<td rowspan="2">
+  <ul>
+    <li>Jacob
+    </li><li>Reading:
+  <ul>
+     <li> <a href="https://arxiv.org/pdf/1809.10756">Chapters 1 and 2</a>
+     </li></ul>
+     </li></ul>
+</td>
+
+</tr>
+
+<tr>
+<td> 1/8  </td>
+<td> Introduction to Probabilistic Programming</td>
+<td>
+     <ul>
+     <li> <a href="#">Probabilistic Programming and Bayesian Inference</a>
+     </li></ul>
+     </td>
+</tr>
+
+<tr>
+<td> 1/13  </td>
+<td> MCMC and Rejection Sampling </td>
+<td>
+     <ul>
+     <li>[TAS'95] <a href="https://eml.berkeley.edu/reprints/misc/understanding.pdf">Understanding the Metropolis-Hastings Algorithm</a>
+     </li></ul>
+     </td>
+<td>
+  <ul>
+    <li> TBD 
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+
+<tr>
+<td> 1/15  </td>
+<td> Program Analysis for Probabilistic Programs </td>
+<td>
+     <ul>
+     <li>[POPL'19] <a href="https://dl.acm.org/doi/pdf/10.1145/3290348">Probabilistic Programming with Densities in SlicStan: Efficient, Flexible, and Deterministic</a>
+     </li></ul>
+     </td>
+<td>
+  <ul>
+    <li> TBD
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+<tr>
+<td> 1/20  </td>
+<td> MLK Day - No Class </td>
+<td>
+
+<td>
+</td>
+</tr>
+
+<tr>
+<td> 1/22  </td>
+<td> Program Analysis of Probabilistic Programs </td>
+<td>
+     <ul>
+     <li>[PLDI'14] <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/slicing.pdf">Slicing Probabilistic Programs</a>
+     </li></ul>
+     </td>
+<td>
+  <ul>
+    <li> TBD
+          </li><li>Reading:
+  <ul>
+     <li> <a href="https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=606ac8882e8653e39b8c5b8cff95bfe4a5c4ead4">Program Slicing</a>
+     </li></ul>
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+<tr>
+<td> 1/27  </td>
+<td> Verification of Probabilistic Programs </td>
+<td>
+     <ul>
+     <li>[PLDI'13] <a href="https://dl.acm.org/doi/10.1145/2491956.2462179">Static analysis for probabilistic programs: inferring whole program properties from finitely many paths</a>
+     </li></ul>
+     </td>
+<td>
+  <ul>
+    <li> TBD
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+<tr>
+<td> 1/29  </td>
+<td> Testing Probabilistic Programs </td>
+<td>
+     <ul>
+     <li>[FSE'18]  <a href="https://www.cs.cornell.edu/~saikatd/papers/probfuzz-fse18.pdf">Testing Probabilistic Programming Systems</a>
+     </li></ul>
+     </td>
+<td>
+  <ul>
+    <li> TBD
+          </li><li>Reading:
+  <ul>
+     <li> <a href="https://www.cs.cornell.edu/~saikatd/papers/storm-fse19.pdf"> Storm: Program Reduction for Testing and Debugging Probabilistic Programming Systems</a>
+     </li></ul>
+      <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+<tr>
+<td> 2/3  </td>
+<td> Probabilistic Programming and Graphics </td>
+<td>
+     <ul>
+     <li>[EuroGraphics'15] <a href="https://dritchie.github.io/pdf/hmc.pdf">Generating Design Suggestions under Tight Constraints with
+Gradient-based Probabilistic Programming</a>
+     </li></ul>
+    
+     </td>
+<td>
+  <ul>
+    <li> TBD
+          </li><li>Reading:
+  <ul>
+     <li> <a href="https://dritchie.github.io/pdf/sosmc.pdf"> Controlling Procedural Modeling Programs with Stochastically-Ordered Sequential Monte Carlo</a>
+     </li></ul>
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+
+<tr>
+<!-- 9/24 -->
+<td> 2/5  </td> 
+<td> Probabilistic Programming and HCI </td>
+<td>
+     <ul>
+     <li>[QEST'19] <a href="https://www.microsoft.com/en-us/research/uploads/prod/2019/09/End-User-Probabilistic-Programming-QEST-2019.pdf">End-User Probabilistic Programming</a>
+     </li></ul>
+     </td>
+<td>
+  <ul>
+    <li> TBD
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+<tr>
+<!-- 9/26 -->
+<td> 2/10  </td>
+<td> Embedded Systems Probabilistic Programming </td>
+<td>
+     <ul>
+     <li>[DAC'21] <a href="https://jsl1994.github.io/papers/DAC_camera_ready.pdf">Statheros: Compiler for Efficient Low-Precision Probabilistic Programming</a>
+     </li></ul>
+     </td>
+<td>
+  <ul>
+    <li> TBD
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+<!-- 9/19 -->
+<tr>
+<td> 2/12  </td>
+<td> Probabilistic Programming and Scientific Computing </td>
+<td>
+  <ul>
+    [SC'19] <a href="https://dl.acm.org/doi/10.1145/3295500.3356180">Etalumis: Bringing Probabilistic Programming to Scientific Simulators at Scale</a>.
+     </ul>
+     </td>
+<td>
+  <ul>
+    <li> TBD
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td> 2/17  </td>
+<td> Introduction to Automatic Differentiation: Forward and Reverse Mode </td>
+<td>
+     <ul>
+     <li>  <a href="#">Notes</a>
+     </li></ul>
+     </td>
+<td>
+  <ul>
+    <li> Jacob
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+<tr>
+<td> 2/19  </td>
+<td> Gradient Based Probabilistic Inference </td>
+<td>
+     <ul>
+     <li>[JMLR'17] <a href="https://arxiv.org/pdf/1603.00788">Automatic Differentiation Variational Inference</a>
+     </li></ul>
+     </td>
+<td>
+  <ul>
+    <li> TBD
+                </li><li>Reading:
+  <ul>
+     <li> <a href="https://arxiv.org/abs/1601.00670">Variational Inference: A Review for Statisticians</a>
+     </li></ul>
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+
+
+<tr>
+<td> 2/24  </td>
+<td> Higher-Order Automatic Differentiation </td>
+<td>
+     <ul>
+     <li>[POPL'07] <a href="https://engineering.purdue.edu/~qobi/papers/popl2007a.pdf">Lazy Multivariate Higher-Order Forward-Mode AD</a>
+     </li></ul>
+     </td>
+<td>
+  <ul>
+    <li> TBD
+          </li><li>Reading:
+  <ul>
+     <li> <a href="https://dl.acm.org/doi/pdf/10.1145/291251.289442"> Functional Differentiation of Computer Programs</a>
+     </li></ul>
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+<!-- 10/17 -->
+<tr>
+<td> 2/26  </td>
+<td> Non-Differentiability in AD </td>
+<td>
+     <ul>
+     <li>[POPL'21] <a href="https://dl.acm.org/doi/10.1145/3434284">Lambda S: Computable Semantics for Differentiable Programming
+with Higher-Order Functions and Datatypes</a>
+     </li></ul>
+     </td>
+<td>
+  <ul>
+    <li> TBD
+          </li><li>Reading:
+  <ul>
+     <li> <a href="https://jsl1994.github.io/papers/POPL2022Final.pdf"> A Dual Number Abstraction for Static Analysis of Clarke Jacobians</a>
+     </li></ul>
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+<tr>
+<!-- <td> 10/10  </td> -->
+<!-- <td> Separation Logic </td> -->
+<!-- <td> -->
+<!--      <ul> -->
+<!--      <li>[POPL'09] <a href="#">Compositional shape analysis by means of bi-abduction</a> -->
+<!--      </ul> -->
+<!--      </td> -->
+<!-- </tr> -->
+
+
+<tr>
+<td> 3/3  </td>
+<td> Checkpointing in AD </td>
+<td>
+     <ul>
+     <li>[TOMS'00] <a href="https://dl.acm.org/doi/10.1145/347837.347846">Algorithm 799: Revolve: An Implementation of Checkpointing for the Reverse or Adjoint Mode of Computational Differentiation</a>
+     </li></ul>
+     </td>
+<td>
+  <ul>
+    <li> TBD
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+<!-- 10/22 -->
+<tr>
+<td> 3/5  </td>
+<td> Project Proposal Presentations </td>
+<td>
+     <ul>
+     <li> <a href="#">Schedule</a>
+     </li></ul>
+     </td>
+<td>
+  <ul>
+    <li> All
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+
+
+<!-- 10/29 -->
+<tr>
+<td> 3/10  </td>
+<td> Numerical Abstract Interpretation and Verification of AD  </td>
+<td>
+     <ul>
+     <li>[OOPSLA'23] <a href="https://jsl1994.github.io/papers/OOPSLA2023FINAL.pdf">Synthesizing Precise Static Analyzers for Automatic Differentiation</a>
+     </li></ul>
+     </td>
+<td>
+  <ul>
+    <li> TBD
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+
+<!-- 10/24 -->
+<tr>
+<td> 3/12  </td>
+<td> AD for Quantum Computing </td>
+<td>
+     <ul>
+     <li>[Arxiv'18] <a href="https://arxiv.org/pdf/1811.04968">PennyLane: Automatic differentiation of hybrid quantum-
+classical computations</a>
+     </li></ul>
+     </td>
+<td>
+  <ul>
+    <li> TBD
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+<!-- 10/31 -->
+<tr>
+<td> 3/17  </td>
+<td> Spring Break - No Class </td>
+<td>
+     <ul>
+     <li>Spring Break - No Class 
+     </li></ul>
+     </td>
+<td>
+  <ul>
+    <li> Spring Break - No Class 
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+<!-- 11/5 -->
+<tr>
+<td> 3/19  </td>
+<td> Spring Break - No Class</td>
+<td>
+     <ul>
+     <li>Spring Break - No Class 
+     </li></ul>
+     </td>
+<td>
+  <ul>
+    <li> Spring Break - No Class 
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+<!-- 11/7 -->
+<tr>
+<td> 3/24  </td>
+<td> What can possibly go wrong? </td>
+<td>
+     <ul>
+     <li>[WIREs'24] <a href="https://wires.onlinelibrary.wiley.com/doi/pdf/10.1002/widm.1555">A taxonomy of automatic differentiation pitfalls</a>
+     </li></ul>
+     </td>
+<td>
+  <ul>
+    <li> TBD
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+<!-- 11/12 -->
+<tr>
+<td> 3/26  </td>
+<td> Error Analysis using AD </td>
+<td>
+     <ul>
+     <li>[CLUSTER'21] <a href="#">Robustness Analysis of Loop-Free Floating-Point Programs via Symbolic Automatic Differentiation</a>
+     </li></ul>
+     </td>
+<td>
+  <ul>
+    <li> TBD
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+<!-- 11/14 -->
+<tr>
+<td> 3/31  </td>
+<td> Compilers for AD </td>
+<td>
+     <ul>
+     <li>[SC'21] <a href="https://dl.acm.org/doi/pdf/10.1145/3458817.3476165"> Reverse-Mode Automatic Differentiation and Optimization of
+GPU Kernels via Enzyme</a>
+     </li></ul>
+     </td>
+<td>
+  <ul>
+    <li> TBD
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+<!-- 11/19 -->
+<tr>
+<td> 4/2  </td>
+<td> AD and Parallel Computing </td>
+<td>
+     <ul>
+     <li>[TOMS'22] <a href="https://arxiv.org/pdf/2111.01861">Source-to-Source Automatic Differentiation of OpenMP Parallel Loops</a>
+     </li></ul>
+     </td>
+<td>
+  <ul>
+    <li> TBD
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+<!-- 11/21 -->
+<tr>
+<td> 4/7  </td>
+<td> AD for Graphics </td>
+<td>
+     <ul>
+     <li>[SIGGRAPH'18] <a href="https://people.csail.mit.edu/tzumao/gradient_halide/gradient_halide.pdf">Differentiable Programming for Image Processing and Deep Learning in Halide</a>
+     </li></ul>
+     </td>
+<td>
+  <ul>
+    <li> TBD
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+<!-- 11/26 -->
+<tr>
+<td> 4/9  </td>
+<td> Software Testing of AD </td>
+<td>
+     <ul>
+     <li>[ICSE'23] <a href="https://lingming.cs.illinois.edu/publications/icse2023b.pdf">Fuzzing Automatic Differentiation in Deep-Learning Libraries</a>
+     </li></ul>
+     </td>
+<td>
+  <ul>
+    <li> TBD
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+<tr>
+<td> 4/14  </td>
+<td>  
+  AD for Explainable ML
+      </td>
+<td>     <ul>
+    [ICCV'21] <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Lerman_Explaining_Local_Global_and_Higher-Order_Interactions_in_Deep_Learning_ICCV_2021_paper.pdf">Explaining Local, Global, And Higher-Order Interactions In Deep Learning</a>.
+     </ul>
+ </td>
+<td>
+  <ul>
+    <li> TBD
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+
+<tr>
+<td> 4/16  </td>
+<td>  
+Final Presentations
+      </td>
+<td>     <ul>
+    Presentation <a href="#">schedule</a>.
+     </ul>
+ </td>
+<td>
+  <ul>
+    <li> All
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+<td> 4/21  </td>
+<td>   Final Presentation
+ </td>
+<td>     <ul>    Presentation <a href="#">schedule</a>.
+     </ul>
+ </td>
+<td>
+  <ul>
+    <li> All
+  <!-- <ul> -->
+  <!--    <li> <a href="http://siek.blogspot.com/2012/07/crash-course-on-notation-in-programming.html">Crash -->
+  <!--    Course on Notation in Programming Language Theory</a> -->
+  <!--      (<a href="https://www.youtube.com/watch?v=vU3caZPtT2I">video1</a>, <a href="https://www.youtube.com/watch?v=MhuK_aepu1Y">video2</a>). -->
+  <!--    <li> [MS18] Chapter 1. -->
+  <!--      <li> [MS18] Chapter 10. -->
+  <!--    </ul> -->
+     </li></ul>
+</td>
+</tr>
+
+
+</tbody></table>
+<br>
+<p>
+</p></dd><dt> <b> Misc</b>: 
+</dt></font><dd><font size="3" face="arial">
+If you have any concern, please send an email to the
+instructor. This webpage template was taken from Qirun Zhang.
+<br>
+<br>  
+
+</font>
+
+
+
+
+
+
+</dd></dl></dt></body></html>
