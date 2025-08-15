@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Schedule</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid #e2e2e2;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            color: #2c3e50;
+            margin: 0;
+        }
+        header p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        .schedule-table th, .schedule-table td {
+            border: 1px solid #e2e2e2;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        .schedule-table th {
+            background-color: #34495e;
+            color: #ffffff;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .schedule-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .schedule-table tr:hover {
+            background-color: #eef;
+        }
+        .day-header {
+            background-color: #ecf0f1;
+            color: #2c3e50;
+            font-weight: bold;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 2px solid #e2e2e2;
+            color: #7f8c8d;
+        }
+	.course-summary {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            border-radius: 4px;
+        }
+        .announcements {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background-color: #e8f5e9;
+            border-left: 5px solid #4caf50;
+            border-radius: 4px;
+        }
+        .announcements h2 {
+            margin-top: 0;
+            color: #2e7d32;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>CS 6390 Programming Languages</h1>
+            <p>Instructor: Jacob Laurel | Semester: Fall 2025</p>
+	    <p>Course Time: MW 11:00am - 12:15pm | Office hours: M 2:00pm-3:00pm Klaus 2332 </p>
+        </header>
+
+        <div class="announcements">
+            <h2>Announcements</h2>
+            <ul>
+                <li>Welcome to CS 6390!</li>
+            </ul>
+        </div>
+
+
+        <div class="course-summary">
+            <h2>Course Summary</h2>
+            <ul>
+                <li>CS 6390 is a graduate course on the fundamentals of Programming Languages (PL). We will study the foundations of different programming paradigms and techniques in the programming languages literature. Topics include the syntax and semantics of programming languages, applications of logic to programming languages, functional programming, lambda calculus, type systems, program verification, and contemporary programming paradigms (including differentiable and probabilistic programming). 
+
+
+
+By the end of the course, students should be able to pick up a PL research paper (e.g., POPL, OOPSLA, PLDI, ICFP) and understand the various contributions (e.g., type derivations, operational semantics, formalizations, etc.) made. In addition, by the end of the course, students should be able to formulate their own novel PL ideas into a course project. Students are expected to attend lecture, ask questions, complete homeworks, 2 exams and a course project. The full syllabus can be found <a href="cs6390syllabus.pdf">here</a></li>
+            </ul>
+        </div>
+
+        <section id="schedule">
+            <h2>Class Schedule</h2>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th>Date</th>
+                        <th>Topic</th>
+                        <th>Readings / Assignments</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Aug 18</td>
+                        <td>Course introduction and what is a programming language?</td>
+                        <td>Syllabus review</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Aug 20</td>
+                        <td>Syntax: Context Free Grammar, Parsing</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 2</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Aug 25</td>
+                        <td>Small step operational semantics</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Aug 27</td>
+                        <td>Big step semantics</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 3</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Sep 1</td>
+                        <td>Labor Day - NO CLASS</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Sep 3</td>
+                        <td>Interpreters and Denotational Semantics</td>
+                        <td> Assignment 1 Released</td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 4</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Sep 8</td>
+                        <td>Interpreters and Denotational Semantics </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Sep 10</td>
+                        <td>Abstract Interpretation</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 5</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Sep 15</td>
+                        <td>Exam 1 Review</td>
+                        <td> Assignment 1 Due </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Sep 17</td>
+                        <td><strong>Midterm Exam 1</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 6</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Sep 22</td>
+                        <td>Propositional Logic</td>
+                        <td>Start thinking about project ideas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Sep 24</td>
+                        <td>Hoare Logic (Axiomatic Semantics)</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 7</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Sep 29</td>
+                        <td>Hoare Logic Part 2</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Oct 1</td>
+                        <td>Prolog and logic programming</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 8</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Oct 6</td>
+                        <td>Lambda Calculus part 1</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Oct 8</td>
+                        <td>Lambda Calculus part 2</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 9</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Oct 13</td>
+                        <td>Functional Programming in LISP</td>
+                        <td> Assignment 2 Released </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Oct 15</td>
+                        <td>Simply Typed Lambda Calculus and Type Systems</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 10</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Oct 20</td>
+                        <td>Type Systems and Type checking rules</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Oct 22</td>
+                        <td>Curry-Howard correspondence</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 11</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Oct 27</td>
+                        <td>Dynamic Language Features Pt. 1 (OOP, Reflection, Dynamic Typing)</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Oct 29</td>
+                        <td>Dynamic Language Features Pt. 2 </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 12</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Nov 3</td>
+                        <td>Review for Midterm 2</td>
+                        <td>  Assignment 2 Due </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Nov 5</td>
+                        <td><strong>Midterm Exam 2</strong></td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 13</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Nov 10</td>
+                        <td>Reactive and Dataflow Programming Languages</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Nov 12</td>
+                        <td>Probabilistic Programming Languages</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 14</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Nov 17</td>
+                        <td>Probabilistic Programming Languages</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Nov 19</td>
+                        <td>Differentiable Programming Languages</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 15</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Nov 24</td>
+                        <td>Differentiable Programming Languages</td>
+                        <td> Project Reports Due </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Nov 26</td>
+                        <td>No Class</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 16</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>Dec 1</td>
+                        <td>Course Recap</td>
+                        <td> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <footer>
+            
+        </footer>
+    </div>
+
+</body>
+</html>
