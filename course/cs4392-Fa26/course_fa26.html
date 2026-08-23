@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Schedule</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid #e2e2e2;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            color: #2c3e50;
+            margin: 0;
+        }
+        header p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        .schedule-table th, .schedule-table td {
+            border: 1px solid #e2e2e2;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        .schedule-table th {
+            background-color: #34495e;
+            color: #ffffff;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .schedule-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .schedule-table tr:hover {
+            background-color: #eef;
+        }
+        .day-header {
+            background-color: #ecf0f1;
+            color: #2c3e50;
+            font-weight: bold;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 2px solid #e2e2e2;
+            color: #7f8c8d;
+        }
+	.course-summary {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            border-radius: 4px;
+        }
+	.course-logistics {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            border-radius: 4px;
+        }
+        .announcements {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background-color: #e8f5e9;
+            border-left: 5px solid #4caf50;
+            border-radius: 4px;
+        }
+        .announcements h2 {
+            margin-top: 0;
+            color: #2e7d32;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>CS 4392 Undergraduate Programming Languages</h1>
+            <p>Instructor: Jacob Laurel | Semester: Fall 2026</p>
+	    <p>Course Time: MW 11:00am - 12:15pm | Office hours: W 2:00pm-3:00pm Klaus 2332 </p>
+        </header>
+
+        <div class="announcements">
+            <h2>Announcements</h2>
+            <ul>
+                <li>Welcome to CS 4392!</li>
+            </ul>
+        </div>
+
+
+        <div class="course-summary">
+            <h2>Course Summary</h2>
+            <ul>
+                <li> CS 4392 is an advanced undergraduate course on the principles of programming languages. We will study the foundations of different programming language paradigms from a design and implementation perspective. Starting from the basics of programming language syntax we will progress into programming language semantics and the various ways to define and implement them. The topics we will  study include: functional programming, lambda calculus, logic programming, type systems, Floyd-Hoare logic, object-oriented programming, and program verification. Concepts will involve a mix of theory and application and will be reinforced through multiple programming assignments. The full syllabus can be found <a href="cs4392syllabus.pdf">here</a></li>
+            </ul>
+
+          <h2>Course Logistics</h2>
+		 <ul>
+                <li> Course logistics including assignment submissions, grades, and online discussion of questions will be done through the course's canvas page.
+		</li>
+		</ul>
+        </div>
+
+        
+  
+
+
+
+        <section id="schedule">
+            <h2>Class Schedule</h2>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th>Date</th>
+                        <th>Topic</th>
+                        <th>Readings / Assignments</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Aug 24</td>
+                        <td>Course introduction and what is a programming language?</td>
+                        <td>Syllabus review</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Aug 26</td>
+                        <td>Syntax: Context Free Grammar, Parsing</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 2</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Aug 31</td>
+                        <td>Big step operational semantics</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Sep 2</td>
+                        <td>Operational semantics part 2</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 3</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Sep 7</td>
+                        <td>Labor Day - NO CLASS</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Sep 9</td>
+                        <td>Interpreters and Denotational Semantics</td>
+                        <td> Assignment 1 Released</td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 4</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Sep 14</td>
+                        <td>Interpreters and Denotational Semantics </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Sep 16</td>
+                        <td>Abstract Interpretation</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 5</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Sep 21</td>
+                        <td>Propositional Logic</td>
+                        <td> Assignment 1 Due </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Sep 23</td>
+                        <td>Exam 1 Review</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 6</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Sep 28</td>
+                        <td><strong>Midterm Exam 1</strong></td>
+                        <td>Start thinking about project ideas</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Sep 30</td>
+                        <td>Hoare Logic (Axiomatic Semantics)</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 7</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Oct 5</td>
+                        <td>Fall Break - NO CLASS</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Oct 7</td>
+                        <td>Hoare Logic Part 2</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 8</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Oct 12</td>
+                        <td>Hoare Logic Part 3</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Oct 14</td>
+                        <td>Lambda Calculus part 1</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 9</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Oct 19</td>
+                        <td>Lambda Calculus Part 2</td>
+                        <td> Project Proposal due </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Oct 21</td>
+                        <td>Lambda Calculus Part 3</td>
+                        <td>Assignment 2 Released </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 10</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Oct 26</td>
+                        <td>Simply Typed Lambda Calculus</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Oct 28</td>
+                        <td>Type Systems and Curry-Howard</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 11</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Nov 2</td>
+                        <td>Polymorphism and Dynamic Language Features </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Nov 4</td>
+                        <td>Differentiable Programming</td>
+                        <td>  </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 12</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Nov 9</td>
+                        <td>Differentiable Programming part 2</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Nov 11</td>
+                        <td>Review for Midterm 2 </td>
+                        <td> Assignment 2 Due  </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 13</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Nov 16</td>
+                        <td><strong>Midterm Exam 2</strong></td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Nov 18</td>
+                        <td>Program Slicing</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 14</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Nov 23</td>
+                        <td>Program Slicing part 2</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Nov 25</td>
+                        <td>Thanksgiving Break - NO CLASS</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 15</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Nov 30</td>
+                        <td>PL for HPC</td>
+                        <td>  </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Dec 2</td>
+                        <td>Buffer / Flex Day (catch-up &amp; project help)</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td class="day-header" colspan="4">Week 16</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>Dec 7</td>
+                        <td>Course Recap</td>
+                        <td> Project Reports Due Dec 14th </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <footer>
+            
+        </footer>
+    </div>
+
+</body>
+</html>
